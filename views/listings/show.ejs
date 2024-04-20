@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Data</title>
+</head>
+<body>
+    
+    <h3>Listing Details</h3>
+    <ul>
+        <li> title : <%= listing.title %></li>
+        <li> description :<%= listing.description %></li>
+        <li> price : &#8377; <%= listing.price.toLocaleString("en-IN") %></li>
+        <li> location : <%= listing.location %></li>
+        <li> country : <%= listing.country %></li>
+        <img src="<%= listing.image %>" alt="" width="500px"  height="500px">
+    </ul>
+</body>
+</html>
